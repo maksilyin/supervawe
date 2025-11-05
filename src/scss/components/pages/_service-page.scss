@@ -1,0 +1,11 @@
+.service-page {
+  background-image: url('../img/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  .head-page__title,
+  .head-page__text {
+    color: var(--white-color);
+  }
+}

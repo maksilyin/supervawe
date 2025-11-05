@@ -1,0 +1,51 @@
+@use 'vars';
+@use 'mixins';
+@use 'fonts';
+@use 'settings';
+
+@use './components/ui/breadcrumbs';
+@use './components/ui/button-primary';
+@use './components/ui/button-transparent';
+@use './components/ui/button-show-more';
+@use './components/ui/form';
+@use './components/ui/tabs';
+@use './components/ui/select';
+@use './components/ui/custom-checkbox';
+@use './components/ui/button-white';
+@use './components/ui/slider-control';
+@use './components/ui/slider-pagination';
+@use './components/ui/accordion';
+@use './components/ui/file-upload';
+
+@use './components/pages/service-page';
+@use './components/pages/policy-page';
+@use './components/pages/typography-page';
+@use './components/pages/taros-page';
+@use './components/pages/detail-page';
+
+@use './components/elements/application-form';
+@use './components/elements/service-list';
+@use './components/elements/video';
+@use './components/elements/hover-video';
+
+@use './components/sections/head-page';
+@use './components/sections/popular-size';
+@use './components/sections/we-help';
+@use './components/sections/variants';
+@use './components/sections/why-we';
+@use './components/sections/team';
+@use './components/sections/equipment';
+@use './components/sections/vk-block';
+@use './components/sections/solutions';
+@use './components/sections/choose-services';
+@use './components/sections/why-are-we';
+@use './components/sections/trust';
+@use './components/sections/technical-solutions';
+@use './components/sections/our-works';
+@use './components/sections/finishing';
+@use './components/sections/cases';
+@use './components/sections/process-automation';
+@use './components/sections/direction';
+@use './components/sections/efficiency';
+@use './components/sections/questions';
+@use './components/sections/application-form-section';

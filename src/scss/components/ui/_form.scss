@@ -1,0 +1,137 @@
+.form {
+  &__inner {
+    max-width: 767px;
+    width: 100%;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--textarea {
+      margin-bottom: 24px;
+    }
+
+    &--name {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__label-name {
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+    font-weight: 600;
+
+    @media screen and (width <=768px) {
+      font-size: 14px;
+    }
+
+    span {
+      color: #E85A52;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    border-radius: 4px;
+    padding: 11px 25px 11px 12px;
+    width: 100%;
+    border: none;
+    outline: transparent;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.42875;
+      color: #a8b8c7;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    min-height: 90px;
+  }
+
+  &__checkbox-text {
+    color: var(--white-color);
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__block {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__approval {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__text-link {
+    text-decoration: underline;
+  }
+
+  &__file-upload {
+    margin-bottom: 16px;
+  }
+
+  &__file-upload-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+  }
+
+  &__button {
+    margin-right: 40px;
+  }
+
+  .just-validate-error-label {
+    margin-top: 5px;
+  }
+
+  &__checkbox {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &--hidden {
+      @media screen and (width <=768px) {
+        display: none;
+      }
+    }
+
+    .form__label {
+      width: fit-content;
+    }
+  }
+
+  &__checkbox-text {
+    align-self: flex-start;
+  }
+
+  &__policy-text {
+    display: none;
+
+    @media screen and (width <=768px) {
+      display: block;
+      margin-bottom: 22px;
+      font-size: 12px;
+      color: var(--white-color);
+    }
+  }
+}

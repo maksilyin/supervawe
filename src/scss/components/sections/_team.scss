@@ -1,0 +1,145 @@
+.team {
+  padding: 80px 0;
+
+  @media screen and (width <=768px) {
+    padding: 60px 0;
+  }
+
+  &__title {
+    text-align: start;
+    margin-bottom: 30px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__progressbar {
+    display: none;
+
+    @media screen and (width <=768px) {
+      display: block;
+      position: relative;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 24px;
+
+    @media screen and (width <=1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (width <=768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <=576px) {
+      display: flex;
+      gap: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+
+    @media screen and (width <=768px) {
+      max-width: 100%;
+    }
+
+    &--green {
+      background-color: var(--accent-color);
+      padding: 24px;
+      background-image: url("../img/team/decor.svg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      justify-content: space-between;
+
+      @media screen and (width <=576px) {
+        min-height: 320px;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 12px;
+
+    @media screen and (width <=768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+
+    @media screen and (width <=768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__post {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #454443;
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    color: var(--accent-color);
+    transition: opacity 0.3s;
+    margin-top: auto;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__title-link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--white-color);
+  }
+
+  &__ancor {
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    color: var(--accent-color);
+    border-radius: 3px;
+    padding: 9px 20px;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+
+    &:hover {
+      background-color: var(--gray-color);
+      color: var(--white-color);
+    }
+  }
+}

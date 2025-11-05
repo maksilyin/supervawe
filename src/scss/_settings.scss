@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-family, sans-serif);
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
+}
+
+.page__body {
+  color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+
+  @media screen and (width <=1024px) {
+    font-size: 34px;
+  }
+
+  @media screen and (width <=768px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.text-block {
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+
+    @media screen and (width <=768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    span {
+      font-style: italic;
+      color: var(--accent-color);
+      line-height: 1.4;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.text-list {
+  padding-left: 25px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+
+    @media screen and (width <=768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    list-style: disc;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.border-bottom {
+  border-top: 1px solid rgba(168, 184, 199, 0.3);
+}

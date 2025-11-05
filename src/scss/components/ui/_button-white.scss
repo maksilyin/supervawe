@@ -1,0 +1,27 @@
+.button-white {
+  display: block;
+  text-align: center;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  color: var(--black-color);
+  padding: 13px 24px;
+  font-weight: 500;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+
+  &:hover {
+    background-color: var(--green-200);
+  }
+
+  &:focus {
+    background-color: var(--green-800);
+    color: var(--white-color);
+  }
+
+  &:disabled {
+    background-color: var(--gray-chicago);
+    color: #7C7C7B;
+    cursor: default;
+  }
+}

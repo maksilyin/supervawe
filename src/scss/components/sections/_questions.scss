@@ -1,0 +1,15 @@
+.questions {
+  padding: 80px 0;
+
+  @media screen and (width <=768px) {
+    padding: 60px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+}

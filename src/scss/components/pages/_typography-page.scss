@@ -1,0 +1,137 @@
+.typography-page {
+  background-image: url('../img/hero/typography-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  &.head-page {
+    padding-bottom: 136px;
+  }
+
+  .head-page__title,
+  .head-page__text {
+    color: var(--white-color);
+  }
+
+  .head-page__title-accent {
+    text-transform: none;
+  }
+
+  .head-page__content {
+    max-width: 650px;
+
+    &::after {
+      bottom: -150px;
+    }
+  }
+
+  &__section-container {
+    background-color: var(--bg-color);
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 120px 0 360px 0;
+
+    @media screen and (width <=768px) {
+      padding-top: 60px;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+
+    .application-form__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__our-works {
+    @media screen and (width <=990px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__why-we {
+    &.why-we {
+      padding-top: 370px;
+
+      @media screen and (width <=990px) {
+        padding-top: 450px;
+      }
+
+      @media screen and (width <=768px) {
+        padding-top: 400px;
+      }
+    }
+  }
+
+  &__technical-solutions {
+    background-color: var(--bg-color);
+  }
+
+  &__trust {
+    &.trust {
+      padding-bottom: 150px;
+    }
+
+    .trust__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .trust__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .trust__title {
+      text-align: left;
+    }
+  }
+
+  &__questions {
+    &.questions {
+      padding-top: 160px;
+    }
+
+    .questions__title {
+      text-align: left;
+    }
+
+    .questions__accordion {
+      border-radius: 16px;
+    }
+
+    .accordion__item {
+      &:nth-child(1) {
+        padding-top: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__vk-block-wrapper {
+    position: relative;
+  }
+
+  &__vk-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}

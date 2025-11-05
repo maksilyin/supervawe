@@ -1,0 +1,13 @@
+.slider-pagination {
+  &.swiper-pagination-progressbar {
+    border-radius: 2px;
+    background-color: #a8b8c7;
+    height: 2px;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    height: 2px;
+  }
+}

@@ -1,0 +1,131 @@
+.finishing {
+  padding: 120px 0;
+
+  @media screen and (width <=768px) {
+    padding: 60px 0;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: start;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+  }
+
+  &__text-link {
+    color: var(--accent-color);
+    font-weight: 700;
+  }
+
+  &__list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media screen and (width <=1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <=768px) {
+      gap: 8px;
+    }
+  }
+
+  &__item {
+    border-radius: 8px;
+    height: 362px;
+    display: block;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (width <=768px) {
+      height: 240px;
+      padding: 16px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s;
+      opacity: 0;
+      background: linear-gradient(180deg, rgba(105, 180, 45, 0) 50%, #69b42d 100%);
+      border-radius: inherit;
+
+      @media screen and (width <=1200px) {
+        display: none;
+      }
+    }
+
+    &--1 {
+      background-image: url("../img/finishing/1.jpg");
+    }
+
+    &--2 {
+      background-image: url("../img/finishing/2.jpg");
+    }
+
+    &--3 {
+      background-image: url("../img/finishing/3.jpg");
+    }
+
+    &--4 {
+      background-image: url("../img/finishing/4.jpg");
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__gradient {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.1) 0%, rgba(35, 35, 35, 0.2) 70%, rgba(35, 35, 35, 0.6) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit;
+  }
+
+  &__item-name {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--white-color);
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+
+    @media screen and (width <=768px) {
+      font-size: 16px;
+    }
+  }
+}

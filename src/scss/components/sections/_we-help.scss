@@ -1,0 +1,31 @@
+.we-help {
+  padding: 85px 0 80px;
+
+  @media screen and (width <= 768px) {
+    padding: 40px 0 60px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 23px;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .service-list {
+      &__item {
+        flex: 1 1 33.333%;
+      }
+    }
+  }
+}

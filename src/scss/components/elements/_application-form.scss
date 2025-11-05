@@ -1,0 +1,125 @@
+.application-form {
+  background-color: var(--accent-color);
+  background-image: url('../img/form/lines.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 673px;
+  border-radius: 16px;
+  padding: 56px 32px;
+  color: var(--black-color);
+
+  @media screen and (width <=768px) {
+    padding: 24px;
+    background-image: url('../img/form/lines2.svg');
+
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+
+    @media screen and (width <=990px) {
+      min-width: 100%;
+    }
+  }
+
+  &__info {
+    margin-top: auto;
+
+    @media screen and (width <=990px) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media screen and (width <=990px) {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    color: var(--black-color);
+
+    @media screen and (width <=990px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (width <=768px) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  &__form {
+    max-width: 666px;
+    width: 100%;
+
+    @media screen and (width <=990px) {
+      min-width: 100%;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    transition: opacity 0.3s;
+
+    @media screen and (width <=768px) {
+      font-size: 18px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  .form__block {
+    @media screen and (width <=1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .form__label {
+    @media screen and (width <=1024px) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .form__approval {
+    @media screen and (width <=990px) {
+      flex-direction: column-reverse;
+      align-items: start;
+      row-gap: 22px;
+      margin-bottom: 40px;
+    }
+  }
+}

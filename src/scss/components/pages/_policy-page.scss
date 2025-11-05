@@ -1,0 +1,27 @@
+.policy-page {
+  padding: 85px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 40px 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text-list {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

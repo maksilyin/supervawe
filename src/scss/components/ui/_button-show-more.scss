@@ -1,0 +1,19 @@
+.button-show-more {
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-left: 4px;
+    transition: transform ease 0.3s;
+  }
+
+  &--active {
+    .button-show-more__icon {
+      transform: rotate(180deg);
+    }
+  }
+}

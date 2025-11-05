@@ -1,0 +1,126 @@
+.technical-solutions {
+  padding: 80px 0;
+
+  @media screen and (width <=768px) {
+    padding: 60px 0;
+  }
+
+
+  &__title {
+    text-align: left;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__card {
+    border-radius: 16px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    position: relative;
+    align-self: stretch;
+
+    &::before {
+      content: "";
+      display: block;
+      background: linear-gradient(90deg, #69b42d 0%, rgba(105, 180, 45, 0) 100%);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+
+      @media screen and (width <=768px) {
+        background: linear-gradient(180deg, #69b42d 0%, rgba(105, 180, 45, 0) 100%);
+      }
+    }
+  }
+
+  &__content {
+    padding: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    color: var(--white-color);
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (width <=768px) {
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 240px;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    color: var(--black-color);
+    padding: 13px 24px;
+    font-weight: 500;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+
+    @media screen and (width <=768px) {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+
+    &:hover {
+      background-color: var(--green-200);
+    }
+
+    &:focus {
+      background-color: var(--green-800);
+      color: var(--white-color);
+    }
+  }
+
+  &__img {
+    border-radius: 0 16px 16px 0;
+    height: 100%;
+
+    @media screen and (width <=768px) {
+      border-radius: 0 0 16px 16px;
+    }
+  }
+
+  &__card-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
+}

@@ -1,0 +1,145 @@
+.cases {
+  background-color: var(--bg-color);
+  padding: 80px 0 87px;
+
+  @media screen and (width <=768px) {
+    padding: 60px 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-img-content {
+    max-width: 396px;
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+
+  &__item-left {
+    max-width: 570px;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__slider {
+    margin-bottom: 32px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item {
+    border-radius: 16px;
+    background-color: var(--white-color);
+    padding: 40px;
+    height: auto;
+
+    @media screen and (width <=990px) {
+      padding: 20px;
+    }
+  }
+
+  &__item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--accent-color);
+    margin: 0 15px 24px 0;
+
+    @media screen and (width <=990px) {
+      font-size: 26px;
+    }
+
+    @media screen and (width <=768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__item-img {
+    max-width: 150px;
+    object-fit: contain;
+
+    @media screen and (width <=768px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__item-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    margin-bottom: 24px;
+  }
+
+  &__list {
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__list-item {
+    list-style: disc;
+  }
+
+  &__slider-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__progressbar {
+    position: relative;
+    margin-right: 33px;
+
+    @media screen and (width <=768px) {
+      margin-right: 0;
+    }
+  }
+
+  &__slider-controls-btns {
+    display: flex;
+    column-gap: 20px;
+
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}

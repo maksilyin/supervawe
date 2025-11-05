@@ -1,0 +1,80 @@
+.popular-size {
+  &__title {
+    margin-bottom: 24px;
+    text-align: left;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__item-img {
+    max-height: 160px;
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+
+    span {
+      @media screen and (width <=768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+
+  &__btn {
+    max-width: 240px;
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  &__text {
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+}

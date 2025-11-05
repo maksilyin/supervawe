@@ -1,0 +1,144 @@
+.taros-page {
+  background-image: url('../img/hero/taros-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @media screen and (width <=768px) {
+    background-image: url('../img/hero/taros-bg-mobile.jpg');
+  }
+
+  &.head-page {
+    padding-bottom: 136px;
+
+    .head-page__title,
+    .head-page__text {
+      color: var(--white-color);
+    }
+
+    @media screen and (width <=768px) {
+      .head-page__title-accent {
+        color: var(--white-color);
+      }
+    }
+  }
+
+  &__text-block {
+    padding-top: 40px;
+    font-family: "Montserrat";
+    font-weight: 400;
+  }
+
+  &__efficiency-decor-wrap {
+    border-bottom: 1px solid rgba(168, 184, 199, 0.3);
+    padding-bottom: 80px;
+  }
+
+  &__popular-size {
+    margin-bottom: 80px;
+
+    .text-block__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
+
+    @media screen and (width <=768px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__trust {
+    &.trust {
+      padding-bottom: 150px;
+    }
+
+    .trust__title {
+      text-align: left;
+    }
+  }
+
+  &__questions {
+    &.questions {
+      padding: 167px 0 120px;
+
+      @media screen and (width <=768px) {
+        padding-top: 140px;
+      }
+    }
+
+    .questions__title {
+      text-align: left;
+    }
+
+    .questions__accordion {
+      border-radius: 16px;
+    }
+
+    .accordion__item {
+      &:nth-child(1) {
+        padding-top: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__section-container {
+    background-color: var(--bg-color);
+  }
+
+  &__vk-block-wrapper {
+    position: relative;
+  }
+
+  &__vk-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  &__finishing {
+    .finishing__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
+
+    &.finishing {
+      padding-bottom: 370px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 360px 0 120px 0;
+
+    @media screen and (width <=768px) {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  &__technical-solutions {
+    .technical-solutions__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
+  }
+}
