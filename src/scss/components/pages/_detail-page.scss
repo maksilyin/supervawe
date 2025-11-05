@@ -118,12 +118,13 @@
     }
 
     &__variants-inner {
-        margin-top: auto;
+        
     }
 
     &__variants-img {
         max-height: 275px;
         object-fit: contain;
+        margin-top: auto;
 
         @media screen and (width <=768px) {
             max-height: 250px;
