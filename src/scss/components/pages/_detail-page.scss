@@ -21,6 +21,7 @@
         }
 
         .text-block__text {
+            font-family: "Montserrat", sans-serif;
             max-width: 786px;
             width: 100%;
         }
@@ -47,6 +48,10 @@
         @media screen and (width <=768px) {
             font-size: 24px;
         }
+    }
+    &__variants-item-text {
+        margin-top: 16px;
+        max-width: 700px;
     }
 
     &__variants-list-wrap {
@@ -503,6 +508,32 @@
                 padding-bottom: 30px;
                 margin-bottom: 48px;
             }
+        }
+    }
+    &__info-item-inner-img-col {
+        position: relative;
+        width: 100%;
+    }
+    &__info-item-inner-content {
+        position: absolute;
+        color: #fff;
+        bottom: 24px;
+        left: 24px;
+        right: 24px;
+        z-index: 1;
+        &-title {
+            font-family: Roboto, sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            vertical-align: middle;
+        }
+        &-text {
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 8px;
         }
     }
 }
